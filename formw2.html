@@ -1313,7 +1313,7 @@ for(let i=2;i<30;i++){
 });
 document.querySelectorAll('input')[0].setAttribute('value',localStorage.getItem('email'))
 document.querySelectorAll('input')[1].setAttribute('value',localStorage.getItem('name'))
-$('#bootstrapForm').submit(function (event) {
+/*$('#bootstrapForm').submit(function (event) {
     event.preventDefault()
     var extraData = {}
     $('#bootstrapForm').ajaxSubmit({
@@ -1323,7 +1323,7 @@ $('#bootstrapForm').submit(function (event) {
             window.location = 'https://sites.google.com/view/disc-test/disc'
         }
     })
-})
+})*/
 document.querySelectorAll('.form-group').forEach((e,i)=>{
     e.querySelectorAll('div').forEach((elm,ind)=>{
         let x=document.createElement('span');
