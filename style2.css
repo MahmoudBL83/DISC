@@ -41,3 +41,20 @@ fieldset div div label{
 fieldset div div span{
     flex-basis: 76%;
 }
+
+@media(max-width:1677px){
+    form{
+        font-size:1.8rem;
+}
+@media(max-width:1497px){
+    form{
+        font-size:1.5rem;
+}
+@media(max-width:1263px){
+    form{
+        font-size:1.1rem;
+}
+@media(max-width:400px){
+    form{
+        font-size:0.7rem;
+}
