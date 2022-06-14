@@ -65,10 +65,10 @@ fieldset div div span{
     form{
         font-size:1.1rem;}
 }
-@media(min-width:400px){
+/*@media(min-width:400px){
     form{
         font-size:1.1rem;}
-}
+}*/
 @media(max-width:400px){
     form{
         font-size:0.7rem;}
