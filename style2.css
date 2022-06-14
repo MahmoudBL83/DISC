@@ -43,33 +43,33 @@ fieldset div div span{
 
 @media(min-width:1677px){
     form{
-        font-size:2rem;
+        font-size:2rem;}
 }
 @media(max-width:1677px){
     form{
-        font-size:1.8rem;
+        font-size:1.8rem;}
 }
 @media(min-width:1497px){
     form{
-        font-size:1.8rem;
+        font-size:1.8rem;}
 }
 @media(max-width:1497px){
     form{
-        font-size:1.5rem;
+        font-size:1.5rem;}
 }
 @media(min-width:1263px){
     form{
-        font-size:1.5rem;
+        font-size:1.5rem;}
 }
 @media(max-width:1263px){
     form{
-        font-size:1.1rem;
+        font-size:1.1rem;}
 }
 @media(min-width:400px){
     form{
-        font-size:1.1rem;
+        font-size:1.1rem;}
 }
 @media(max-width:400px){
     form{
-        font-size:0.7rem;
+        font-size:0.7rem;}
 }
