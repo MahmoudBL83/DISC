@@ -10,7 +10,6 @@ form{
     margin-top:25px;
     margin-bottom:25px;
     transform: translateX(-50%);
-    font-size:2rem;
 }
 #sub{
     width:215px;
@@ -46,22 +45,26 @@ fieldset div div span{
     form{
         font-size:2rem;
 }
+@media(max-width:1677px){
+    form{
+        font-size:1.8rem;
+}
 @media(min-width:1497px){
     form{
         font-size:1.8rem;
 }
-/*@media(max-width:1497px){
+@media(max-width:1497px){
     form{
         font-size:1.5rem;
-}*/
+}
 @media(min-width:1263px){
     form{
         font-size:1.5rem;
 }
-/*@media(max-width:1263px){
+@media(max-width:1263px){
     form{
         font-size:1.1rem;
-}*/
+}
 @media(min-width:400px){
     form{
         font-size:1.1rem;
