@@ -59,20 +59,28 @@
     </body>
     <script>
         document.querySelector('.next').addEventListener('click',()=>{
-            if(document.querySelectorAll('input')[0].value!=''&&document.querySelectorAll('input')[1].value!=''){
-            localStorage.setItem('email',document.querySelectorAll('input')[0].value);
-            localStorage.setItem('name',document.querySelectorAll('input')[1].value);
-            if(document.querySelector('select').value=='DISC'){
-                location.replace('./formw2.html');
+           if(document.querySelectorAll('input')[0].value!=''&&document.querySelectorAll('input')[1].value!=''){
+           localStorage.setItem('email',document.querySelectorAll('input')[0].value);
+           localStorage.setItem('name',document.querySelectorAll('input')[1].value);
+           if(document.querySelector('select').value=='DISC'){
+               location.replace('./formw2.html');
+           }
+          }
+          //handle error if user doen't enter inputs//
+            else if(document.querySelectorAll('input')[0].value==''||document.querySelectorAll('input')[1].value==''){
+                if(document.querySelectorAll('input')[0].value==''){
+                    document.querySelectorAll('input')[0].style.border='1px solid red';
+                    setInterval(()=>{
+                        document.querySelectorAll('input')[0].style.border='1px solid #ccc';                    },500)
+                }
+                if(document.querySelectorAll('input')[1].value==''){
+                    document.querySelectorAll('input')[1].style.border='1px solid red';
+                    setInterval(()=>{
+                        document.querySelectorAll('input')[1].style.border='1px solid #ccc';                    },500)
+                }
             }
-            }
-            else{
-                document.querySelectorAll('input')[0].style.border='1px solid red';
-                document.querySelectorAll('input')[1].style.border='1px solid red';
-                setInterval(()=>{
-                    document.querySelectorAll('input')[0].style.border='1px solid #ccc';
-                    document.querySelectorAll('input')[1].style.border='1px solid #ccc';
-                },1000)
+            else if(document.querySelectorAll('input')[0].value.includes('@')==false){
+                alert('please enter a valid email')
             }
         })
     </script>  
