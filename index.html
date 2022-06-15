@@ -59,7 +59,7 @@
     </body>
     <script>
         document.querySelector('.next').addEventListener('click',()=>{
-           if(document.querySelectorAll('input')[0].value!=''&&document.querySelectorAll('input')[1].value!=''){
+           if(document.querySelectorAll('input')[0].value!=''&&document.querySelectorAll('input')[1].value!=''&&document.querySelectorAll('input')[0].value.includes('@')==true){
            if(document.querySelector('select').value=='DISC'){
                localStorage.setItem('email',document.querySelectorAll('input')[0].value);
                localStorage.setItem('name',document.querySelectorAll('input')[1].value);
@@ -67,7 +67,7 @@
            }
           }
           //handle error if user doen't enter inputs//
-            else if(document.querySelectorAll('input')[0].value==''||document.querySelectorAll('input')[1].value==''&&document.querySelectorAll('input')[0].value.includes('@')==true){
+            else if(document.querySelectorAll('input')[0].value==''||document.querySelectorAll('input')[1].value==''){
                 if(document.querySelectorAll('input')[0].value==''){
                     document.querySelectorAll('input')[0].style.border='1px solid red';
                     setInterval(()=>{
