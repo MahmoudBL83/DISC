@@ -4,6 +4,9 @@ body{
     text-align: center;
     font-family: 'Cairo', sans-serif;
 }
+sup{
+    color:red;
+}
 form{
     width:50%;
     margin-left: 50%;
