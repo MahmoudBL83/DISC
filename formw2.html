@@ -1265,7 +1265,8 @@
 </form>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
-$('#bootstrapForm').submit(function (event) {
+<script>
+    $('#bootstrapForm').submit(function (event) {
       $(document).ready(function() {
           for(let i=2;i<30;i++){
   document.querySelectorAll('.form-group')[i].querySelectorAll('div')[0].querySelector('input').addEventListener('click',()=>{
