@@ -17,13 +17,13 @@
             <h1 style="color:rgba(229, 126, 37, 1)">التسجيل في الإختبارات</h1>
             <div style="display:flex;flex-wrap:nowrap;justify-content: center;flex-basis: 90%;">
                 <fieldset style="display:inline-block;flex-basis:40%;padding:0px;margin:0">
-                    <legend for="">Email</legend>
+                   <span class="legend"><sup>*</sup>الايميل</span>
                     <div class="form-group">
                         <input id="emailAddress" type="email" name="emailAddress" class="form-control" required>
                     </div>
                 </fieldset>
                 <fieldset style="display:inline-block;flex-basis:40%;padding:0px;margin:0">
-                    <legend for="137142276">الإسم</legend>
+                    <span class="legend"><sup>*</sup> الاسم</span>
                     <div class="form-group">
                         <input id="2029007067" type="text" name="entry.2029007067" class="form-control" required style="width:calc(100% - 34px);margin-right:1px;height:20px;padding:10.880px;border:1px solid #ccc;border-radius: 7px;">
                     </div>
@@ -60,9 +60,9 @@
     <script>
         document.querySelector('.next').addEventListener('click',()=>{
            if(document.querySelectorAll('input')[0].value!=''&&document.querySelectorAll('input')[1].value!=''){
-           localStorage.setItem('email',document.querySelectorAll('input')[0].value);
-           localStorage.setItem('name',document.querySelectorAll('input')[1].value);
            if(document.querySelector('select').value=='DISC'){
+               localStorage.setItem('email',document.querySelectorAll('input')[0].value);
+               localStorage.setItem('name',document.querySelectorAll('input')[1].value);
                location.replace('./formw2.html');
            }
           }
